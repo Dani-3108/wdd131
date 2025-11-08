@@ -26,15 +26,65 @@ nav a:hover {
     color: rgb(255, 132, 0);
     
 }
-
-/*Body sections*/ 
-
 /*Main Section*/
-
-main h2, h3 {
-    font-family: "Inknut Antiqua", serif;
+main {
+    font-family: "Cormorant Garamond", serif;
+    display: grid;
+    max-width: max-content;
+    margin: 20px 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    font-size: large;
+    font-weight: bold;
 }
 
+main p {
+    margin: 10px;
+}
+
+main h2 {
+    font-family: "Inknut Antiqua", serif;
+    background-color: rgb(8, 88, 158);
+    color: white;
+    padding: auto;
+    margin: auto;
+    text-align: center;
+}
+
+.card {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(227, 220, 211);
+}
+
+.danielimage {
+    float: right;
+    width: 150px;
+    height: auto;
+    margin: 25px;
+    border-radius: 5px;
+}
+
+.flag {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+h3 {
+    margin-top: 40px;
+    font-family: "Inknut Antiqua", serif;
+    text-align: center;
+    text-decoration: underline solid black;
+    font-size: x-large;
+}
+
+.card li {
+    font-family: "Cormorant Garamond", serif;
+    font-size: larger;
+}
 
 
 
