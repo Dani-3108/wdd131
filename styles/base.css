@@ -1,0 +1,66 @@
+/* Header Section */
+header {
+    background-color: rgb(8, 88, 158);
+    color: white;
+    font-family: "Inknut Antiqua", serif;
+    font: 900;
+    font-size: x-large;
+    text-align: center; 
+}
+.course-title {
+    display: block;
+}
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(50, 49, 49);
+    margin: 0;
+    padding: .10rem;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+nav a:hover {
+    text-decoration: underline solid white;
+    color: rgb(255, 132, 0);
+    
+}
+
+/*Body sections*/ 
+
+/*Main Section*/
+
+main h2, h3 {
+    font-family: "Inknut Antiqua", serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer section*/
+footer {
+    font-family: "Cormorant Garamond", serif;
+    background-color: rgb(8, 88, 158);
+    font: bolder;
+    font-size: x-large;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+/* 
+    The main element has a limited width and is centered on the screen horizontally.
+    Layout the main column cards using CSS Grid.
