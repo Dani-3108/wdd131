@@ -37,6 +37,9 @@ main {
     font-size: large;
     font-weight: bold;
 }
+main h1 {
+    font-size: small;
+}
 
 main p {
     margin: 10px;
