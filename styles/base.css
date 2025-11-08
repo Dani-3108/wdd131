@@ -30,8 +30,8 @@ nav a:hover {
 main {
     font-family: "Cormorant Garamond", serif;
     display: grid;
-    max-width: max-content;
-    margin: 20px 20px;
+    max-width: 1200px;
+    margin: 20px auto;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     font-size: large;
@@ -46,8 +46,8 @@ main h2 {
     font-family: "Inknut Antiqua", serif;
     background-color: rgb(8, 88, 158);
     color: white;
-    padding: auto;
-    margin: auto;
+    padding: 1rem;
+    margin: 0;
     text-align: center;
 }
 
@@ -81,9 +81,16 @@ h3 {
     font-size: x-large;
 }
 
+.card ul {
+    list-style-position: inside;
+    text-align: justify;
+    padding-top: 150px;
+}
+
 .card li {
     font-family: "Cormorant Garamond", serif;
     font-size: larger;
+    margin: 0;
 }
 
 
