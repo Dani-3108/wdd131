@@ -1,0 +1,120 @@
+
+
+/*Header section*/
+#course-title {
+    display: block;
+}
+
+header {
+    background-color: rgb(8, 88, 158);
+    color: white;
+    font-family: "Inknut Antiqua", serif;
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(50, 49, 49);
+    margin: 0;
+    padding: .10rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline solid white;
+    color: rgb(255, 132, 0);
+}
+
+/*Main Section*/
+
+main {
+    font-family: "Cormorant Garamond", serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 2rem;
+    font-size: large;
+    font-weight: bold;
+}
+
+main h1 {
+    position: absolute;
+    left: -9999px;
+}
+
+main p {
+    margin: 10px;
+}
+
+main h2 {
+    font-family: "Inknut Antiqua", serif;
+    background-color: rgb(8, 88, 158);
+    color: white;
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+}
+
+.card {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(227, 220, 211);
+}
+
+.danielimage {
+    float: right;
+    width: 150px;
+    margin: 25px;
+    border-radius: 5px;
+    height: auto;
+}
+
+.flag {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+h3 {
+    margin-top: 40px;
+    font-family: "Inknut Antiqua", serif;
+    text-align: center;
+    text-decoration: underline solid black;
+    font-size: x-large;
+}
+
+.card ul {
+    list-style-position: inside;
+    text-align: justify;
+    padding-top: 150px;
+
+}
+
+.card li {
+    font-family: "Cormorant Garamond", serif;
+    font-size: larger;
+    margin: 0;
+}
+
+
+/*footer section*/
+
+footer {
+    background-color: rgb(8, 88, 158);
+    font-family: "Cormorant Garamond", serif;
+    font: bolder;
+    font-size: x-large;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+}
