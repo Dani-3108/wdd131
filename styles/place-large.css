@@ -1,0 +1,32 @@
+@media screen and (min-width: 1000px) {
+    main {
+        display: block;
+        width: 100%;
+    }
+    .data {
+        position: absolute;
+        top: 15rem;
+        left: 1rem;
+    }
+    .weather {
+        position: absolute;
+        top: 25rem;
+        right: 1rem;
+    }
+    section {
+        background-color: antiquewhite;
+    }
+    section h2 {
+        background-color: rgb(57, 242, 229);
+        margin: 0;
+    }
+    .weather-icon {
+        display: none;
+    }
+    .weather h2::after {
+    content: " ⛅";
+    }
+    footer {
+        font-size: x-large;
+    }
+}

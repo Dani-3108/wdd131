@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Country Page Project</title>
+    <meta name="description" content="WDD131 Week03 Country page project, content about the city of Vancouver BC">
+    <meta name="author" content="Daniel Osorio">
+    <link rel="stylesheet" href="styles/place-small.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@0;1&family=Inknut+Antiqua:wght@600&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Vancouver</h1>
+    </header>  
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/vancouver_1._largewebp.webp" media="(min-width: 1000px)">
+                <source srcset="images/vancouver_1_medium.webp" media="(min-width: 500px)">
+                <img src="images/vancouver-small.webp" alt="Vancouver at night" width="1500" height="750">
+            </picture>
+        </div>
+        <section class="data">
+            <h2>Data</h2>
+            <ul>
+                <li>Area:<span> 2,800 km²</span></li>
+                <li>Population:<span> 2.73 million</span></li>
+                <li>Country:<span> Canada</span></li>
+                <li>Languages:<span> English, French</span></li>
+                <li>Currency:<span> Canadian Dollar</span></li>
+                <li>Time Zone:<span> UTC -7</span></li>
+            </ul>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <img class="weather-icon" src="images/weather_icon.svg" alt="Weather Icon">
+            <ul>
+                <li>Temperature: <span>10°C</span></li>
+                <li>Conditions: <span>Partly Cloudy</span></li>
+                <li>Wind: <span>6 km/h</span></li>
+                <li>Wind Chill:<span id="windchill"></span></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🌿 Daniel Osorio 🌿 Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

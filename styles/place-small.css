@@ -1,0 +1,66 @@
+:root {
+    --background-color: rgb(56, 108, 203);
+    --color: white;
+    --font-family: "Inknut Antiqua", serif;/*H1,h2 font*/
+    /*--font-family: "Cormorant Garamond", serif;*/
+}
+body {
+    margin: auto;
+    padding: 0;
+}
+header {
+    background-color: var(--background-color);
+    color: var(--color);
+    font-family: var(--font-family);
+    font-size: x-large;
+    text-align: center;
+    margin: 0;
+}
+header h1 {
+    margin: 0;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: antiquewhite;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+
+}
+section {
+    text-align: center;
+    border: 2px solid rgb(52, 173, 214);
+}
+section h2{
+    font-family: var(--font-family);
+}
+section ul {
+    padding: 0;
+}
+section li {
+    list-style: none;
+    font-weight: bold;
+    font-size: x-large;
+    font-family: "Cormorant Garamond", serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: end;
+    gap: 1rem;
+}
+section span {
+    font-weight: normal;
+    text-align: left;
+}
+section img{
+    width: 80px;
+}
+footer {
+    background-color: var(--background-color);
+    font-family: "Cormorant Garamond", serif;
+    text-align: center;
+    font-size: larger;
+    color: var(--color);
+    padding: 2rem;
+}
