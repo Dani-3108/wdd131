@@ -1,0 +1,26 @@
+table {
+    border: 1px solid black;
+    text-align: center;
+    border-collapse: collapse;
+}
+caption {
+    caption-side: bottom;
+}
+thead tr:first-child {
+    background-color: black;
+    color: white;
+}
+thead tr td {
+    background-color: black;
+}
+thead tr {
+    background-color: gray;
+}
+tbody tr:nth-child(even){
+    background-color: lightgray;
+}
+
+td, th {
+    padding: 10px;
+    border: 1px solid black;
+}
