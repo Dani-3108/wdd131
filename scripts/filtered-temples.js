@@ -114,9 +114,9 @@ function createTempleCard(temple) {
     let imageUrl = document.createElement("img");
 
     templeName.textContent = temple.templeName;
-    location.textContent = temple.location;
-    dedicated.textContent = temple.dedicated;
-    area.textContent = temple.area;
+    location.textContent = "Location: " + temple.location;
+    dedicated.textContent = "Dedication:"+  temple.dedicated;
+    area.textContent = "Size: " + temple.area;
     imageUrl.setAttribute("src",temple.imageUrl)
     imageUrl.setAttribute("alt", temple.templeName);
     imageUrl.setAttribute("loading", "lazy");
@@ -134,4 +134,48 @@ let mainElement = document.querySelector("main");
 temples.forEach(function (temple) {
     let card = createTempleCard(temple);
     mainElement.append(card);
+});
+
+//filtered views
+const navLinks = document.querySelectorAll("nav a");
+navLinks.forEach(function (link) {
+    link.addEventListener("click", function () {
+        console.log(link.textContent);
+        let filter = link.textContent;
+        let filteredTemples = [];
+
+        if (filter === "Old") {
+            filteredTemples = temples.filter(function (temple) {
+                return parseInt(temple.dedicated) < 1900
+            });
+        }
+        else if (filter === "New") {
+            filteredTemples = temples.filter(function (temple) {
+                return parseInt(temple.dedicated) > 2000
+            });
+        }
+        else if (filter === "Large") {
+            filteredTemples = temples.filter(function (temple) {
+                return temple.area > 90000
+            });
+        }
+        else if (filter === "Small") {
+            filteredTemples = temples.filter(function (temple) {
+                return temple.area < 10000
+            });
+        }
+        else {
+            filteredTemples = temples;
+        }
+
+        mainElement.innerHTML = "";
+        let heading = document.createElement("h2");
+        heading.textContent = filter;
+        mainElement.appendChild(heading);
+
+        filteredTemples.forEach(function (temple) {
+            let card = createTempleCard(temple);
+            mainElement.append(card);
+        });
+    });
 });
