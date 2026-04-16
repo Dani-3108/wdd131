@@ -9,10 +9,9 @@
     <meta name="author" content="Daniel Osorio">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index.media-query.css">
     <script src="scripts/index.js" defer></script>
 </head>
 <body>
@@ -26,8 +25,8 @@
         </nav>
     </header>
     <main>
-        <h2>Talk to an Expert Today</h2>
-        <form action="">
+        <h2 class="formheader">Talk to an Expert Today</h2>
+        <form method="get" action="review.html">
             <fieldset>
                 <legend>Your information</legend>
                 <label for="yourname">Your Name*<input type="text" name="yourname" id="yourname" required></label>
@@ -41,9 +40,6 @@
                 <label for="productName">Products*
                     <select name="productName" id="productName" required>
                         <option value="" disabled selected> Select a Product ...</option>
-                        <option value="Cameras">Cameras</option>
-                        <option value="brain">Brain / CPU</option>
-                        <option value="AI">AI interface</option>
                     </select>
                 </label>
                 <label for="hearfromus">How did you hear about us?* <input type="text" name="hearfromus" id="hearfromus"></label>

@@ -1,0 +1,33 @@
+@media screen and (min-width: 768px){
+#hamburger {
+        display: none;
+    }
+    nav.menu {
+        position: static;
+        display: flex;
+        flex-direction: row;
+    }
+    .hero h2 {
+        font-size: 3.5rem;
+    }
+    .what-we-do {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 3rem;
+        
+    }
+    .what-we-do > h3 {
+        width: 100%;
+    }
+    .what-we-do section {
+        flex: 1
+    }
+    .what-we-do section h3 {
+        text-align: center;
+    }
+        
+    .what-we-do section p{
+        text-align: center;
+    }
+}

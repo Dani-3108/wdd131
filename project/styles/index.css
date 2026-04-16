@@ -1,0 +1,185 @@
+main h2,
+main h3 {
+    font-family: "Fira Code", monospace;
+    color: #9783FF;
+}
+
+main {
+    font-family: "Inter", sans-serif;
+    color: #FFFFFF;
+}
+
+body {
+    background-color: #000000;
+}
+/*--------------------------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #9783FF;
+
+}
+h1 {
+    font-family: "Fira Code", monospace;
+    color: #9783FF;
+}
+/* Nav - hidden on mobile by default */
+nav.menu {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #000000;
+    padding: 1rem;
+    border: 1px solid #9783FF;
+    z-index: 100;
+}
+nav.menu.open {
+    display: flex;
+}
+nav.menu a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+}
+nav a:hover {
+    text-decoration: underline solid white;
+    color: rgb(255, 132, 0);
+}
+#hamburger {
+    background: none;
+    border: 1px solid #9783FF;
+    color: #9783FF;
+    font-size: 1.5rem;
+    padding: 0.25rem ;
+}
+.hero {
+    position: relative;
+    text-align: center;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+}
+.hero h2 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+}
+/* What We Do sections */
+.what-we-do {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #11064a;
+    border-top: 1px solid #9783FF;
+}
+.what-we-do h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.what-we-do>h3 {
+    font-size: 2rem;
+}
+.what-we-do section{
+    background-color: #111111;
+    border: 1px solid #9783FF;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+/*Fotter*/
+footer {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-top: 1px solid #9783FF;
+    font-size: 1.2rem;
+}
+footer a {
+    color: #9783FF;
+}
+/* Form */
+form {
+    padding: 1rem;
+}
+
+fieldset {
+    border: 1px solid #9783FF;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+legend {
+    color: #9783FF;
+    font-family: "Fira Code", monospace;
+    padding: 0 0.5rem;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-bottom: 1rem;
+    color: #FFFFFF;
+}
+
+input,
+select,
+textarea {
+    background-color: #111111;
+    border: 1px solid #9783FF;
+    color: #FFFFFF;
+    padding: 0.5rem;
+    font-family: "Inter", sans-serif;
+    width: 100%;
+}
+
+.submitButton {
+    background-color: #9783FF;
+    color: #000000;
+    padding: 0.75rem 2rem;
+    border: none;
+    font-family: "Fira Code", monospace;
+    width: 100%;
+}
+.formheader {
+    font-size: 4rem;
+}
+/* How It Works */
+main section {
+    border: 1px solid #9783FF;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: larger;
+}
+main section h3 {
+    font-size: 3rem;
+}
+.howitworksh2 {
+    font-size: 4rem;
+}
+
+
+main section img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 5px;
+}

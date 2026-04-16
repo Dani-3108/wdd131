@@ -1,0 +1,38 @@
+//Footer section
+const today = new Date();
+document.getElementById("currentyear").innerHTML = today.getFullYear();
+document.getElementById("lastModified").innerHTML = document.lastModified;
+//Hamburger button section 
+const button = document.querySelector("#hamburger");
+const navigation = document.querySelector(".menu");
+//listener events
+button.addEventListener("click", function () {
+    if (button.classList.contains("open")) {
+        button.innerHTML = "&#9776";
+    }
+    else {
+        button.innerHTML ="&#10005";
+    }
+    navigation.classList.toggle("open");
+    button.classList.toggle("open");
+});
+//Form section 
+const products = ["Cameras", "Brain / CPU", "AI Interface"];
+const selectElement = document.getElementById("productName");
+//foor loop section
+if (selectElement) {
+    products.forEach(product => {
+        let option = document.createElement("option");
+        option.setAttribute("value", product)
+        option.textContent = product;
+        selectElement.appendChild(option);
+
+    });
+}
+///
+const company = {
+    name: "UnitX",
+    industry: "Manufacturing",
+    product: "AI Vision Systems"
+};
+console.log(`Company: ${company.name} | Industry: ${company.industry}`);
