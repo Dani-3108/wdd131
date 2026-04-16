@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 06 WDD131 Project Web Page UnitX</title>
+    <meta name="description"
+        content="My site is about AI vision systems. It covers what they are, what they are used in manufacturing environments and how they are built. This offers a brief but solid introduction for engineers that want to implement this on their plants.">
+    <meta name="author" content="Daniel Osorio">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>UnitX</h1>
+        <button id="hamburger" aria-label="Menu">&#9776;</button>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="how-it-works.html">Products</a>
+            <a href="contact.html">About Us</a>
+        </nav>
+    </header>
+    <main>
+        <h2>How it works</h2>
+        <section>
+            <h3>Cameras</h3>
+            <img src="images/optix.webp" alt="UnitX camera mounted on manufacturing assembly line" width="800" height="1000" loading="lazy">
+            <p>
+                A software-defined lighting system that dynamically illuminates parts for maximum contrast imaging. Capture the best
+                image with versatile lighting. Illuminate and image random complex defects across variable materials and structures.
+            </p>
+        </section>
+        <section>
+            <h3>The Brain</h3>
+            <img src="images/brain.webp" alt="UnitX brain and camera" width="800" height="1000" loading="lazy">
+            <p>
+                Manage AI model development through the four core functional centers: AI model labeling, AI training, threshold tuning,
+                and production line data. Use an intuitive, drag-and-drop interface to develop AI models. As few as 5 images are needed
+                to train AI models. High resolution image support, up to 50MP.
+            </p>
+        </section>
+        <section>
+            <h3>AI / Training</h3>
+             <img src="images/ai.webp" alt="AI Dashboard" width="640" height="360" loading="lazy">
+            <p>
+                Sample Efficient AI. Rapidly teach models with as few as 5 images per defect type. Adjustable Tolerances. Pixel precise
+                defect segmentation and adjustable tolerance. Accurate for defects that are complex and variable in shape, size,
+                location, and presentation, automatically normalizing for position variability.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🌿 Daniel Osorio 🌿 Mexico</p>
+        <p id="lastModified"></p>
+        <a href="references.html">References</a>
+    </footer>
+</body>
+</html>
